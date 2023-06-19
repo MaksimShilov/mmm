@@ -31,7 +31,6 @@ public class MainActivity2 extends AppCompatActivity {
         whichTurn.setText("ХОД ПЕРВОГО ИГРОКА");
         N = Integer.parseInt(n);
         deskTop.setText(n);
-
     }
 
     public void onClick(View view) {
