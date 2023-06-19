@@ -8,27 +8,38 @@
     tools:context=".MainActivity2">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textViewN"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Состояние игрового поля:" />
+        android:paddingTop="20dp"
+        android:text="Текущее состояние игрового поля:" />
 
     <TextView
         android:id="@+id/textDeskTop"
         android:layout_width="match_parent"
         android:layout_height="109dp"
-        android:text="" />
-
+        android:gravity="center"
+        android:text=""
+        android:textSize="20sp" />
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/whichTurn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Введите номер кучки и количества фишек в новых двух кучках через пробел:" />
+        android:paddingTop="20dp"
+        android:gravity="center"
+        android:text="ХОД ПЕРВОГО ИГРОКА" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:text="Введите количество взятых фишек:" />
 
     <EditText
-        android:id="@+id/textE"
+        android:id="@+id/textEditM"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:gravity="center"
         android:text="" />
 
     <Button
@@ -38,10 +49,6 @@
         android:onClick="onClick"
         android:text="Делаем ход" />
 
-    <TextView
-        android:id="@+id/textPlayer"
-        android:layout_width="match_parent"
-        android:layout_height="108dp"
-        android:text="" />
+
 
 </LinearLayout>

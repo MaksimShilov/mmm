@@ -8,20 +8,36 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Игра Ним" />
-
-    <TextView
-        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Игра Баше"
+        android:paddingTop="20dp"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
         android:text="Введите стартовое количество фишек:" />
 
     <EditText
         android:id="@+id/textN"
         android:layout_width="50dp"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:hint="10" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="Введите максимальное количество фишек, которое можно брать за один раз:" />
+
+    <EditText
+        android:id="@+id/textM"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:hint="3" />
 
     <Button
         android:id="@+id/button"
@@ -30,5 +46,10 @@
         android:onClick="onClick"
         android:text="Играем" />
 
+    <TextView
+        android:id="@+id/textErr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         />
 
 </LinearLayout>
